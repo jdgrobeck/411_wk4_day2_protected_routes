@@ -20,10 +20,18 @@ const Login = () => {
     });
   };
 
+  // CHALLENGE 
+  // The Nav button should say Log in when there's no cookie
+  // After login, the cookie is set and the NAV button should say Log Out
+  // When logged out, the cookie should either be deleted or set to ""
+
   const login = (e) => {
     e.preventDefault();
     // set cookie here
     // set loggedIn = true and max-age = 60*1000 (one minute)
+
+    //max-age is when the cookies expire. Counts in miliseconds. 60*1000 is a minute
+    document.cookie = "loggedIn=true;max-age=60*1000"
 
     navigate("/");
   };

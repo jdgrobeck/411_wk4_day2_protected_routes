@@ -1,4 +1,5 @@
 import React from "react";
+// Can import BrowserRouter here or in index.js 
 import { BrowserRouter } from "react-router-dom";
 
 import Navigation from "./components/Navigation";
